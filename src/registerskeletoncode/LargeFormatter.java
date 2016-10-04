@@ -9,14 +9,10 @@ package registerskeletoncode;
  *
  * @author aschindler1
  */
-public class LineItem {
-    private Product product;
-    private int quanity;
-
-    public LineItem(Product product, int quanity) {
-        this.product = product;
-        this.quanity = quanity;
+public class LargeFormatter {
+    
+    
+    public LargeFormatter(){
+        
     }
-    
-    
 }

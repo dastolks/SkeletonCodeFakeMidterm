@@ -12,5 +12,5 @@ package registerskeletoncode;
 public interface DataStore {
 
     Customer findCustomerById(String custID);
-    
+    Product findProductById(String prodID);
 }

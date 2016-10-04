@@ -20,8 +20,8 @@ public class Register {
         receipt = new Receipt(id, db);
     }
 
-    public final void addProductToSale(String string, int i) {
-        
+    public final void AddProductToSale(String s, int i) {
+        receipt.AddProductToSale(s, i);
     }
 
     public final void endSale() {

@@ -19,8 +19,8 @@ public class StartUp {
         DataStore db = new FakeDatabase();
         Register register = new Register();
         register.startNewSale("C200", db);
-        register.addProductToSale("101", 2);
-        register.addProductToSale("205", 1);
+        register.AddProductToSale("1", 2);
+        register.AddProductToSale("2", 1);
         register.endSale();
     }
     

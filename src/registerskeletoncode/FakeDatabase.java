@@ -15,6 +15,11 @@ public class FakeDatabase implements DataStore {
         new Customer("Doe", "Bob", "C101"),
         new Customer("Jones", "Sally", "C102")
     };
+    private Product[] products = {
+        new Product("1", "Men's shirt", 8.00),  
+        new Product("2", "Men's jeans", 10.00),  
+        new Product("3", "Women's shirt", 13.00), 
+    };
     
     @Override
     public final Customer findCustomerById(String custID){
@@ -27,5 +32,17 @@ public class FakeDatabase implements DataStore {
         }
         
         return customer;
+    }
+    public final Product findProductById(String prodID){
+        Product product = null;
+        for(Product p: products){
+            if(prodID.equals(p.getProdId())){
+                product = p;
+                break;
+            }    
+        }
+        
+        return product;        
+        
     }
 }
